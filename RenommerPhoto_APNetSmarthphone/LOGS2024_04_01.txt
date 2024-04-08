@@ -1,0 +1,5 @@
+01/04/2024 18:37:43 : Le répertoire suivant : 'C:\Users\fabri\Pictures\Smartphone\frontignan\Smartphone' n'existe pas !
+01/04/2024 18:38:10 : les données du fichier de configurations ne sont pas corrects !
+01/04/2024 18:38:26 : Début des fichiers : C:\Users\fabri\Images\2024 - Mars - Frontignan
+01/04/2024 18:39:04 : Fin des fichiers : C:\Users\fabri\Images\2024 - Mars - Frontignan
+01/04/2024 18:39:04 : Nombre de fichiers : APN=0, Smartphone=0, Total=0
