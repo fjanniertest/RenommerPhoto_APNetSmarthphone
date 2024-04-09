@@ -94,7 +94,16 @@ namespace RenommerPhoto_APNetSmarthphone
                 int i = 1;
                 string strRepertoireslisteFichiers = Path.Combine(strIN, repertoire);
                 string[] listeFichiers = Directory.GetFiles(strRepertoireslisteFichiers);
+
+                //il faut order les fichiers par date de derniere écriture,
+                // par défaut, windows ne trie pas par date !
+                SortedList<string, string> listeTri = new SortedList<string, string>();
                 foreach (string strFichier in listeFichiers)
+                {
+                    fi = new FileInfo(strFichier);
+                    listeTri.Add(fi.LastWriteTime.ToString("yyyy_MM_dd HH_mm_ss"), strFichier);
+                }
+                foreach (string strFichier in listeTri.Values)
                 {
                     fi = new FileInfo(strFichier);
                     typeAppareil = GetType(fi);
